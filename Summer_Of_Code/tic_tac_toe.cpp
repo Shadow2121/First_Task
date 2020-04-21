@@ -38,9 +38,9 @@ bool finish(int a[3][3])
         return false;
     if(a[2][0]==a[2][1]==a[2][2]==0||a[2][0]==a[2][1]==a[2][2]==1)
         return false;*/
-    if(a[0][0]==a[1][1]==a[2][2])
+    if((a[0][0]==0&&a[1][1]==0&&a[2][2]==0)||(a[0][0]==1&&a[1][1]==1&&a[2][2]==1))
         return true;
-    if(a[0][2]==a[1][1]==a[2][0])
+    if((a[0][2]==0&&a[1][1]==0&&a[2][0]==0)||(a[0][2]==1&&a[1][1]==1&&a[2][0]==1))
         return true;
     return false;
 }
@@ -83,7 +83,6 @@ int main()
             show(a); 
         while(!finish(a))
         {
-            clrscr();
             cout << "Enter the no. of location : ";
             cin >> q;
             c=change(a,q,s);
