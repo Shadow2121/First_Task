@@ -1,4 +1,5 @@
 #include<iostream>
+#include<stdlib.h>
 #include<conio.h>
 
 using namespace std;
@@ -80,9 +81,12 @@ int main()
             }
         }           
         cout << "Player 1: 0\nPlayer 2: 1\n";
-            show(a); 
+        
         while(!finish(a))
         {
+            //
+            //system("cls");
+            show(a);
             cout << "Enter the no. of location : ";
             cin >> q;
             c=change(a,q,s);
@@ -94,6 +98,9 @@ int main()
                     s--;
             }
             show(a);
+            cout<< "\n\nPress any key to continue: ";
+            getch();
+            system("cls");
         }
       //  if(finish(a)==true)
      //  cout << "Game complite\n\n";
