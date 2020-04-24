@@ -4,9 +4,7 @@
 #include<string>
 #include<stdlib.h>
 
-
 using namespace std;
-
  
 class chess
 {
@@ -109,7 +107,7 @@ class chess
                         }
                     
                 }
-                cout << endl << "_____|_____|_____|_____|_____|_____|_____|_____|_____"<<endl;
+                cout << endl << "    _|_____|_____|_____|_____|_____|_____|_____|_____"<<endl;
                 cout << "     |     |     |     |     |     |     |     |     "<<endl;
                 
             }
@@ -693,36 +691,36 @@ class chess
                         }
                         else
                         {
-                            if(a[x][y]=='c')
+                            if(a[x][y]=='q')
                             {
                                 if(a[xs][ys]=='S')
                                 {
-                                    a[xs][ys]='c';
+                                    a[xs][ys]='q';
                                     a[x][y]=' ';
                                 }
                                 else if(a[xs][ys]=='E')
                                 {
-                                    a[xs][ys]='c';
+                                    a[xs][ys]='q';
                                     a[x][y]=' ';
                                 }
                                 else if(a[xs][ys]=='C')
                                 {
-                                    a[xs][ys]='c';
+                                    a[xs][ys]='q';
                                     a[x][y]=' ';
                                 }
                                 else if(a[xs][ys]=='H')
                                 {
-                                    a[xs][ys]='c';
+                                    a[xs][ys]='q';
                                     a[x][y]=' ';
                                 }
                                 else if(a[xs][ys]=='K')
                                 {
-                                    a[xs][ys]='c';
+                                    a[xs][ys]='q';
                                     a[x][y]=' ';
                                 }
                                 else if(a[xs][ys]=='Q')
                                 {
-                                    a[xs][ys]='c';
+                                    a[xs][ys]='q';
                                     a[x][y]=' ';
                                 }
                                 else
@@ -1693,7 +1691,7 @@ int main()
         getch();
        // cout << "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
     }
-    if(c.player==1)
+    if(c.player==2)
         cout << "Player " << c.player << " wins.";
     else
         cout << "Player " << c.player << " wins.";
